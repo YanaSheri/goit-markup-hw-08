@@ -1,0 +1,214 @@
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    /* transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity; */
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    width: 528px;
+    min-height: 580px;
+    background-color: var(--modal-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    padding: 40px;
+}
+
+.close-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.close-btn:hover .close-svg {
+    fill: var(--accent-color);
+}
+
+.close-svg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    fill: var(--primary-text-color);
+}
+
+
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+.modal-form {
+    margin-top: 12px;
+    .label {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: var(--p-text-color);
+    }
+}
+
+.input-wrap {
+    position: relative;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.input {
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 42px;
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.modal-svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    .input:focus + & {
+        fill: var(--accent-color);
+    }
+}
+
+.user-comment {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    background-color: transparent;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    &::placeholder {
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.textarea-wrap {
+    margin-top: 4px;
+}
+
+.form-checkbox {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.checkbox-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--p-text-color);
+    .icons {
+        position: relative;
+        display: flex;
+        margin-right: 8px;
+    }
+}
+
+.checkbox-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.checkbox-svg-checked {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    right: 1px;
+    top: 1px;
+}
+
+.checkbox-link {
+    margin-left: 5px;
+    color: var(--accent-color);
+}
+
+.checkbox-input {
+    &:checked + .checkbox-text .icons  {
+        background-color: var(--accent-color);
+        fill: var(--accent-color);
+        border-radius: 2px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.checkbox-svg-checked {
+    fill: var(--white-text-color);
+}
+
+.send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}

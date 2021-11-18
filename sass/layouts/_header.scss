@@ -1,0 +1,51 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 80px;
+}
+
+
+/* ------- БЛОК КОНТАКТОВ ------- */
+.header-contacts {
+    display: flex;
+    align-items: baseline;
+    height: 80px;
+    .link {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        color: var(--p-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:not(:last-child) {
+             margin-right: 48px;
+        }
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+        &:hover .header-svg,
+        &:focus .header-svg {
+            fill: currentColor;
+        }
+    }
+}
+
+.header-svg {
+    margin-right: 10px;
+    fill: var(--icon-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

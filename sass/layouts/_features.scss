@@ -1,0 +1,31 @@
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    .item-title {
+        font-size: 14px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .item-text {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: var(--p-text-color);
+    }
+}
+
+.features-list__item {
+    width: 270px;
+}
+
+.features-list__icon {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--team-section-bg-color);
+    margin-bottom: 30px;
+}

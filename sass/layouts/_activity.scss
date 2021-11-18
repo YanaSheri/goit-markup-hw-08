@@ -1,0 +1,36 @@
+.activity {
+    padding-top: 0;
+}
+
+.activity-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.activity-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.activity-list__link {
+    position: relative;
+    text-decoration: none;
+}
+
+.activity-list__subblock {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.activity-list__title {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
