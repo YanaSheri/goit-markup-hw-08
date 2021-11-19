@@ -122,23 +122,27 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  background-color: coral;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    background-color: greenyellow;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    background-color: blue;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    background-color: red;
   }
 }
 
@@ -532,7 +536,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .features-list {
     display: flex;
-    display: flex;
     justify-content: space-between;
   }
 }
@@ -566,17 +569,51 @@ ul {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 479px) {
+  .clients-list {
+    padding-left: auto;
+    padding-right: auto;
+  }
+  .clients-list__item {
+    display: block;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: 210px;
+  }
+}
+
 .clients-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 479px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .clients-list .link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
@@ -589,8 +626,28 @@ ul {
   border: 1px solid var(--accent-color);
 }
 
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .clients-list .link {
+    width: 170px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list__item {
+    width: calc(100% / 2 - 30px);
+    height: 92px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc(100% / 3 - 30px);
+    height: 92px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .clients-svg {
@@ -633,10 +690,16 @@ ul {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 36px;
+  }
 }
 
 .activity {
