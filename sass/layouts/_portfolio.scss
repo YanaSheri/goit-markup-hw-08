@@ -1,20 +1,13 @@
 /* -- КАРТОЧКИ -- */
 
 .portfolio-list {
-
-    // 
-    // flex-wrap: wrap;
-    // justify-content: space-between;
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin-left: -30px;
     }
     @media screen and (min-width: 1200px) {
-        // flex-wrap: wrap;
         justify-content: center;
-        // margin-left: -30px;
-        // justify-content: space-between;
     }
 }
 
@@ -27,7 +20,6 @@
        
     }
      @media screen and (min-width: 1200px) {
-         margin-left: 30px;
          width: calc(100% / 3 - 30px);
     }
 }
@@ -97,7 +89,4 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--p-text-color);
-    // @media screen and (min-width: 768px) {
-         
-    // }
 }

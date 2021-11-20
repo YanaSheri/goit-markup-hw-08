@@ -3,15 +3,11 @@
     margin-bottom: 40px;
     margin-top: -15px;
 
-
-
     list-style: none;
-    // display: flex;
     justify-content: center;
     margin-bottom: 50px;
     .item-button {
         margin-top: 15px;
-
 
         font-family: Roboto;
         font-weight: 500;
@@ -46,7 +42,6 @@
 
 .filter-item {
     display: inline;
-    // margin-top: 15px;
     @media screen and (min-width: 768px) {
         width: calc(100% / 2 -30px);
     }
