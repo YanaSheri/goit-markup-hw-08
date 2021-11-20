@@ -1,34 +1,20 @@
 @media screen and (max-width: 479px) {
-    .clients-list {
-        padding-left: auto;
-        padding-right: auto;
-    }
     .clients-list__item {
         display: block;
-        margin-bottom: 30px;
-        margin-left: 30px;
-        width: 210px;
+        margin: 0 auto 30px;
     }
-}   
+}  
 
-.clients-list {
-    // display: flex;
-    // justify-content: center;
-    // margin-top: 50px;   
+.clients-list {  
     margin-top: 30px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
     @media screen and (min-width: 479px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: -30px;
-        // justify-content: space-around;
-        
+        display: grid;
+        grid-template-columns: repeat(2, 210px);
+        gap: 30px;
     }
     @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
+        grid-template-columns: repeat(3, 210px);
     }
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -50,37 +36,14 @@
         &:focus {
             border: 1px solid var(--accent-color);
         }
+        @media screen and (max-width: 479px) {
+            margin: 0 auto;
+       }
         @media screen and (min-width: 1200px) {
             width: 170px;
         }
     }
 }
-
-
-
-.clients-list__item {
-    // @media screen and (max-width: 479px) {
-    //     margin-bottom: 30px;
-        
-    // }
-    @media screen and (min-width: 480px) {
-        width: calc(100% / 2 - 30px);
-        height: 92px;
-        margin-left: 30px;
-        margin-bottom: 30px;
-    }
-    @media screen and (min-width: 768px) {
-        width: calc(100% / 3 - 30px);
-        height: 92px;
-        margin-left: 30px;
-        margin-bottom: 30px;
-    }
-}
-
-
-// .clients-list__item:not(:last-child) {
-//     margin-right: 30px;
-// }
 
 .clients-svg {
     width: 106px;
@@ -93,3 +56,24 @@
         fill: var(--accent-color);
     }
 }
+
+
+// .clients-list__item {
+//     @media screen and (min-width: 480px) {
+//         // width: calc(100% / 3 - 30px);
+//         // height: 92px;
+//     }
+//     @media screen and (min-width: 768px) {
+//         // height: 92px;
+//     }
+//      @media screen and (min-width: 1200px) {
+//         // width: calc(100% / 3 - 30px);
+//         // margin-left: 0px;       
+//     }
+// }
+
+
+// .clients-list__item:not(:last-child) {
+//     margin-right: 30px;
+// }
+

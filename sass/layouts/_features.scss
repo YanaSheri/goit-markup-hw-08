@@ -1,3 +1,7 @@
+.features {
+    margin-bottom: -60px;
+}
+    
 .features-list {
     .item-title {
         font-size: 14px;
@@ -30,6 +34,9 @@
 .features-list__item {
     width: 100%;
     margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
     @media screen and (min-width: 768px) {
         width: calc(100% / 2 - 30px);
         margin-left: 30px;
