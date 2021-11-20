@@ -9,17 +9,24 @@
     font-weight: 700;
     justify-content: center;
 
-    // font-size: 26px;
-    // line-height: 1.2;
+    
     letter-spacing: 0.03em;
     text-decoration: none;
-    // margin-right: 90px;
-    height: 100%;
+    
+    @media screen and (min-width: 1200px) {
+        height: 100%;
+        font-size: 26px;
+        line-height: 1.2;
+        margin-right: 90px;
+    }
     .logo-blue {
         display: flex;
         align-items: center;
         color: var(--accent-color);
-        height: 100%;
+        @media screen and (min-width: 1200px) {
+            height: 100%;
+        }
+        
     }
     .logo-white {
         color: var(--white-text-color);

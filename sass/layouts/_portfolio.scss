@@ -1,14 +1,35 @@
 /* -- КАРТОЧКИ -- */
 
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+    // 
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+    @media screen and (min-width: 1200px) {
+        // flex-wrap: wrap;
+        justify-content: center;
+        // margin-left: -30px;
+        // justify-content: space-between;
+    }
 }
 
 .portfolio-list__item {
     position: relative;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 30px);
+        margin-left: 30px;
+       
+    }
+     @media screen and (min-width: 1200px) {
+         margin-left: 30px;
+         width: calc(100% / 3 - 30px);
+    }
 }
 
 .portfolio-list__link {
@@ -26,7 +47,11 @@
     display: block;
     overflow: hidden;
     .img {
+        width: 100%;
         display: block;
+        @media screen and (min-width: 768px) {
+            max-width: 100%;
+        }
     }
     &::before {
         display: inline-block;
@@ -52,6 +77,11 @@
 .portfolio-list__footer {
     padding: 20px 24px;
     border: 1px solid var(--portfolio-card-border-color);
+    @media screen and (min-width: 768px) {
+         &:first-child {
+            padding-bottom: 60px;
+        }
+    }
 }
 
 .portfolio-list__title {
@@ -67,4 +97,7 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--p-text-color);
+    // @media screen and (min-width: 768px) {
+         
+    // }
 }
