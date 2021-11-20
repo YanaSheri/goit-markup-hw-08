@@ -948,6 +948,7 @@ ul {
 @media screen and (min-width: 768px) {
   .footer-left {
     margin-right: 165px;
+    margin-bottom: 60px;
   }
 }
 
@@ -988,6 +989,12 @@ ul {
 .footer-right {
   text-align: center;
   margin: 60px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-right {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
