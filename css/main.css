@@ -620,7 +620,7 @@ ul {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 480px) {
   .clients-list {
     display: grid;
     grid-template-columns: repeat(2, 210px);
@@ -638,8 +638,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .clients-list {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
   }
 }
 

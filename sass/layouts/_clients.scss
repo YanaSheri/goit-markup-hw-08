@@ -7,7 +7,7 @@
 
 .clients-list {  
     margin-top: 30px;
-    @media screen and (min-width: 479px) {
+    @media screen and (min-width: 480px) {
         display: grid;
         grid-template-columns: repeat(2, 210px);
         gap: 30px;
@@ -18,8 +18,8 @@
     }
     @media screen and (min-width: 1200px) {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
+        // flex-wrap: nowrap;
+        // justify-content: center;
     }
     .link {
         display: flex;
