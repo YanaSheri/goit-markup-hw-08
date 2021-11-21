@@ -731,6 +731,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .activity {
+    padding-top: 0;
+  }
+}
+
 .activity-list {
   display: flex;
   justify-content: center;
