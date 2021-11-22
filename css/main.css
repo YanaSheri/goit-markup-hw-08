@@ -84,6 +84,7 @@ ul {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
   padding-top: 0;
   padding-bottom: 0;
   height: 60px;
@@ -96,9 +97,15 @@ ul {
 }
 
 .main-menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* ------- БЛОК КОНТАКТОВ ------- */
@@ -145,6 +152,11 @@ ul {
   fill: var(--icon-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.open-menu {
+  background-color: transparent;
+  border: none;
 }
 
 .container {
@@ -178,6 +190,7 @@ ul {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
   padding-top: 0;
   padding-bottom: 0;
   height: 60px;
@@ -190,9 +203,15 @@ ul {
 }
 
 .main-menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* ------- БЛОК КОНТАКТОВ ------- */
@@ -239,6 +258,11 @@ ul {
   fill: var(--icon-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.open-menu {
+  background-color: transparent;
+  border: none;
 }
 
 .nav {
