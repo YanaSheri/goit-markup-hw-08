@@ -8,20 +8,24 @@
     padding-top: 0;
     padding-bottom: 0;
     height: 60px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         height: 80px;
+        
+    }
+    @media screen and (min-width: 1200px) {
+    //     height: 80px;
     }
 }
 
 .main-menu {
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin-right: 0;
     }
-   
 }
 
 
@@ -30,6 +34,15 @@
     display: flex;
     align-items: baseline;
     // height: 80px;
+    @media screen and (min-width: 768px) {
+    //    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 140px;
+    }
     @media screen and (min-width: 1200px) {
         height: 80px;
     }
@@ -57,6 +70,13 @@
         &:focus .header-svg {
             fill: currentColor;
         }
+        @media screen and (min-width: 768px) {
+            height: auto;
+            font-size: 12px;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
     }
 }
 
@@ -75,8 +95,7 @@
     &:focus {
         fill: var(--accent-color);
     }
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
-
-// .mob-menu-svg {
-
-// }

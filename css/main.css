@@ -90,7 +90,7 @@ ul {
   height: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header-container {
     height: 80px;
   }
@@ -100,11 +100,12 @@ ul {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .main-menu {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-right: 0;
   }
 }
 
@@ -112,6 +113,17 @@ ul {
 .header-contacts {
   display: flex;
   align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 140px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -147,6 +159,16 @@ ul {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts .link {
+    height: auto;
+    font-size: 12px;
+  }
+  .header-contacts .link:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .header-svg {
   margin-right: 10px;
   fill: var(--icon-color);
@@ -162,6 +184,12 @@ ul {
 
 .open-menu:hover, .open-menu:focus {
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .open-menu {
+    display: none;
+  }
 }
 
 .container {
@@ -201,7 +229,7 @@ ul {
   height: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header-container {
     height: 80px;
   }
@@ -211,11 +239,12 @@ ul {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .main-menu {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-right: 0;
   }
 }
 
@@ -223,6 +252,17 @@ ul {
 .header-contacts {
   display: flex;
   align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 140px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -258,6 +298,16 @@ ul {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts .link {
+    height: auto;
+    font-size: 12px;
+  }
+  .header-contacts .link:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .header-svg {
   margin-right: 10px;
   fill: var(--icon-color);
@@ -275,9 +325,16 @@ ul {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .open-menu {
+    display: none;
+  }
+}
+
 .nav {
   display: flex;
   height: 100%;
+  margin-left: 88px;
 }
 
 .nav-list {
