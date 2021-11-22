@@ -764,10 +764,6 @@ ul {
   margin: 0 auto;
 }
 
-.features {
-  margin-bottom: -60px;
-}
-
 .features-list .item-title {
   font-size: 14px;
   line-height: 1.15;
@@ -795,6 +791,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -802,6 +799,7 @@ ul {
   .features-list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 
@@ -824,6 +822,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .features-list__item {
     width: 270px;
+    margin-bottom: 0;
   }
 }
 
