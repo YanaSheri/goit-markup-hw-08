@@ -26,6 +26,9 @@
         justify-content: space-between;
         margin-right: 0;
     }
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+    }
 }
 
 
@@ -45,6 +48,8 @@
     }
     @media screen and (min-width: 1200px) {
         height: 80px;
+        flex-direction: row;
+        width: auto;
     }
     .link {
         display: flex;
@@ -76,6 +81,9 @@
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
+        }
+        @media screen and (min-width: 1200px) {
+            height: 100%;
         }
     }
 }
