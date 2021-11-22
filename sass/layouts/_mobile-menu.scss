@@ -1,0 +1,103 @@
+.menu-mob {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--modal-bg-color);
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    z-index: 10;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-top-item {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    @media screen and (max-width: 479px) {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+}
+
+.menu-top-link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &.active {
+        color: var(--accent-color);
+    }
+}
+
+.menu-bottom {
+    @media screen and (max-width: 479px) {
+        text-align: center;
+    }    
+}
+.menu-bottom-link-tel {
+    display: block;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+    margin-bottom: 32px;
+    @media screen and (max-width: 479px) {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+}
+
+.menu-bottom-link {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    color: var(--p-text-color);
+    margin-bottom: 64px;
+    @media screen and (max-width: 479px) {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+}
+
+.soc-list {
+    display: flex;
+    @media screen and (max-width: 479px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.soc-item {
+    margin-right: 10px;
+    padding-right: 10px;
+    &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    @media screen and (max-width: 479px) {
+        margin-bottom: 15px;
+        border: none;
+        padding: 0 5px;
+        margin: 0 auto 15px;
+    }
+}
+
+.soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}

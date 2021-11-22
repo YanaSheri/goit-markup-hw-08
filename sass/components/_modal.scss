@@ -55,6 +55,11 @@
     box-sizing: border-box;
     cursor: pointer;
     background-color: transparent;
+    &.mob {
+        border: none;
+        top: 21px;
+        right: 25px;
+   }
 }
 
 .close-btn:hover .close-svg {
@@ -66,6 +71,10 @@
     height: 18px;
     position: absolute;
     fill: var(--primary-text-color);
+    &.mob {
+       width: 40px;
+       height: 40px;
+   }
 }
 
 

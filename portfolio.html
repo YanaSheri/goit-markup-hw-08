@@ -44,11 +44,50 @@
                 </div>
                 
             </div>
-            <button type="button" class="open-menu">
+            <button type="button" class="open-menu" data-menu-open>
                 <svg class="mob-menu-svg" width="40" height="40">
                     <use href="./images/sprite.svg#icon-sendwich"></use>
                 </svg>
             </button>
+        </div>
+        
+        <div class="menu-mob is-hidden" data-menu>
+            <button type="button" class="close-btn mob" data-menu-close>
+                <svg class="close-svg mob">
+                    <use href="./images/sprite.svg#icon-close-icon"></use>
+                </svg>
+            </button>
+            <div class="menu-top">
+                <ul class="menu-top-list">
+                    <li class="menu-top-item">
+                        <a href="./index.html" class="menu-top-link link">Студия</a>
+                    </li>
+                    <li class="menu-top-item">
+                        <a href="./portfolio.html" class="menu-top-link link active">Портфолио</a>
+                    </li>
+                    <li class="menu-top-item">
+                        <a href="#" class="menu-top-link link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-bottom">
+                <a href="tel:+380961111111" class="menu-bottom-link-tel link">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="menu-bottom-link link">info@devstudio.com</a>
+                <ul class="soc-list">
+                    <li class="soc-item">
+                        <a href="#" class="soc-link link">Instagram</a>
+                    </li>
+                    <li class="soc-item">
+                        <a href="#" class="soc-link link">Twitter</a>
+                    </li>
+                    <li class="soc-item">
+                        <a href="#" class="soc-link link">Facebook</a>
+                    </li>
+                    <li class="soc-item">
+                        <a href="#" class="soc-link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -238,5 +277,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mob-menu.js"></script>
 </body>
 </html>
