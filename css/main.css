@@ -947,7 +947,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .title {
     font-size: 36px;
   }
