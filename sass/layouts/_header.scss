@@ -70,7 +70,11 @@
 .open-menu {
     background-color: transparent;
     border: none;
-
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 
 // .mob-menu-svg {

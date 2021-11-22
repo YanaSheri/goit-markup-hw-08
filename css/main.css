@@ -157,6 +157,11 @@ ul {
 .open-menu {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.open-menu:hover, .open-menu:focus {
+  fill: var(--accent-color);
 }
 
 .container {
@@ -263,6 +268,11 @@ ul {
 .open-menu {
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.open-menu:hover, .open-menu:focus {
+  fill: var(--accent-color);
 }
 
 .nav {
