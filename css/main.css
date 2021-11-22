@@ -1166,6 +1166,7 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 0;
   display: flex;
   align-items: center;
   letter-spacing: 0.06em;
@@ -1199,6 +1200,7 @@ ul {
   .footer-left {
     margin-right: 70px;
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -1270,6 +1272,7 @@ ul {
   .footer-form {
     margin-top: 20px;
     display: flex;
+    align-items: center;
   }
 }
 
