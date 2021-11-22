@@ -96,6 +96,7 @@ ul {
 }
 
 .main-menu {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -189,6 +190,7 @@ ul {
 }
 
 .main-menu {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
