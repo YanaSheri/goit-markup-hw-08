@@ -1312,6 +1312,14 @@ ul {
   top: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list__link {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+}
+
 .portfolio-list__img-box {
   position: relative;
   display: block;
@@ -1355,6 +1363,9 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
+  .portfolio-list__footer {
+    flex-grow: 1;
+  }
   .portfolio-list__footer:first-child {
     padding-bottom: 60px;
   }
