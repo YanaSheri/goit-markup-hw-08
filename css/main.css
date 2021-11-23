@@ -1004,6 +1004,7 @@ ul {
 .team-list {
   list-style: none;
   margin-top: 50px;
+  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1011,7 +1012,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: -30px;
   }
 }
 
